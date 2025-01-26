@@ -1,0 +1,90 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+    background: #4b4b4b;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.5;
+}
+
+table {
+    border-collapse: collapse;
+    width: 750px;
+    margin: 0 auto;
+    background: #000000;
+}
+
+td {
+    padding: 15px;
+    border: 2px solid #00ff00;
+}
+
+.header {
+    background: #000000;
+    text-align: center;
+    border-bottom: 5px solid #00ff00;
+}
+
+.nav {
+    background: #000000;
+    text-align: center;
+}
+
+h1 {
+    color: #00ff00;
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+h2 {
+    color: #00ff00;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+a {
+    color: #00ff00;
+    text-decoration: underline dotted;
+}
+
+a:hover {
+    color: #ffffff;
+    background: #0011ff;
+}
+
+.blink {
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+img {
+    border: 2px solid #00ff00;
+}
+
+button {
+    border: 2px solid #000000;
+    color: #000000;
+    padding: 5px 10px;
+    font-family: "Courier New", Courier, monospace;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #ffffff;
+    background: #0011ff;
+}
+
+marquee {
+    color: #00ff00;
+    background: #000000;
+    padding: 5px;
+}
+
+hr {
+    border: 1px solid #00ff00;
+}

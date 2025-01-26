@@ -1,89 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mosh Labs - Expert Cloud Infrastructure Services</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code&display=swap" rel="stylesheet">
 </head>
 <body>
-    <marquee scrollamount="7"> 🌎 WELCOME TO A WORLD WHERE THE CLOUD JUST WORKS FOR YOU 🌎 </marquee>
-    
-    <table>
-        <tr>
-            <td class="header" colspan="2">
-                <h1>[ MOSHLABS ]</h1>
-                <span> >>> Your Fractional Cloud Infrastructure Agency <<< </span>
-            </td>
-        </tr>
-        <tr>
-            <td class="nav" colspan="2">
-                <a href="#services">[SERVICES]</a> |
-                <a href="#open_source">[OPEN_SOURCE]</a> |
-                <a href="#contact_us">[CONTACT_US]</a>
-            </td>
-        </tr>
-        <tr id="services">
-            <td width="100%">
-                <h2>[SERVICES]</h2>
-                <h2> >>> SCALE YOUR INFRASTRUCTURE WITHOUT SCALING YOUR TEAM <<< </h2>
-                <h3>We focus on the cloud stuff.</h3>
-                <ul>
-                    <li>System Design & Architecture</li>
-                    <li>Infrastructure Automation</li>
-                    <li>Cloud Application Deployment</li>
-                </ul>
-                <h3>You focus on growing your business.</h3>
-            </td>
-        </tr>
-        <tr id="open_source">
-            <td width="100%">
-                <h2>[OPEN_SOURCE]</h2>
-                <h2> >>> WE ARE EXPERTS HERE LIES THE PROOF <<< </h2>
-                <table width="100%">
-                    <tr>
-                        <td><a href="#">terraform-modules</a></td>
-                        <td><p>Production-ready infrastructure as code modules with built-in best practices for compliance and scalability.</p></td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr id="contact_us">
-            <td width="100%">
-                <h2>[CONTACT_US]</h2>
-                <h2> >>> WE CAN PROBABLY HELP <<< </h2>
-                <form action="https://api.web3forms.com/submit" method="POST">
+
+    <div class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <h3>MOSHLABS</h3>
+                <div class="nav-links">
+                    <a href="#services">Services</a>
+                    <a href="#open-source">Open Source</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="container">
+            <h1>Your Fractional Cloud Infrastructure Agency</h1>
+            <p class="hero-text">Scale your cloud infrastructure without scaling your team</p>
+        </div>
+        <div class="container service-card">
+            <div class="terminal terminal-redirect">
+                <code>
+                    <div class="text-line">$ git clone https://github.com/moshlabs </div>
+                    <div class="text-line">$ cd terraform-modules</div>
+                    <div class="text-line">$ terraform init</div>
+                    <div class="text-line">Initializing cloud provider...</div>
+                </code>
+            </div>
+        </div>
+    </div>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>System Design & Architecture</h3>
+                    <div class="card-content">
+                        <p>Expert guidance on building scalable cloud infrastructure</p>
+                        <div class="tech-stack">
+                            <span>AWS</span>
+                            <span>GCP</span>
+                            <span>Azure</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <h3>Infrastructure Automation</h3>
+                    <div class="card-content">
+                        <p>Streamline your operations with modern DevOps practices</p>
+                        <div class="tech-stack">
+                            <span>Terraform</span>
+                            <span>Kubernetes</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <h3>Cloud Application Deployment</h3>
+                    <div class="card-content">
+                        <p>Seamless deployment and management of cloud applications</p>
+                        <div class="tech-stack">
+                            <span>CI/CD</span>
+                            <span>GitOps</span>
+                            <span>IaC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="open-source" class="split-section">
+        <div class="container">
+            <div class="content">
+                <h2>Open Source</h2>
+                <div class="service-card">
+                    <h3>terraform-modules</h3>
+                    <p>Production-ready infrastructure as code modules with built-in best practices for compliance and scalability.</p>
+                    <a href="#" class="button">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="142f5c97-31e3-4efb-a569-2165596767fe">
+                <input type="hidden" name="redirect" value="https://moshlabsdotnet.github.io/website/thanks.html">
                 
-                    <!-- Replace with your Access Key -->
-                    <input type="hidden" name="access_key" value="142f5c97-31e3-4efb-a569-2165596767fe">
-                    
-                    <!-- Custom Confirmation / Success Page -->
-                    <input type="hidden" name="redirect" value="https://moshlabsdotnet.github.io/website/thanks.html">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-wrapper">
+                        <input 
+                            type="email" 
+                            id="email"
+                            name="email" 
+                            required 
+                            placeholder="you@company.com"
+                        >
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <div class="input-wrapper">
+                        <textarea 
+                            id="message"
+                            name="message" 
+                            required 
+                            placeholder="Tell us about your project..."
+                            rows="6"
+                        ></textarea>
+                    </div>
+                </div>
+                
+                <input type="checkbox" name="botcheck" class="hidden">
+                <button type="submit" class="button">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
 
-                    <!-- Form Inputs. Each input must have a name="" attribute -->
-                    <table>
-                        <tr>
-                            <td>EMAIL:</td>
-                            <td><input name="email" type="email" required style="background: #000000; color: #00ff00; border: 1px solid #00ff00;"></td>
-                        </tr>
-                        <tr>
-                            <td>MESSAGE:</td>
-                            <td><textarea name="message" required rows="8" style="background: #000000; color: #00ff00; border: 1px solid #00ff00;"></textarea></td>
-                        </tr>
-                        <!-- Honeypot Spam Protection -->
-                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                    </table>
-
-                    <button type="submit">SEND MESSAGE</button>
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" align="center">
-                <hr>
-                <small>
-                    Copyright © 2025 Mosh Labs, Inc<br>
-                </small>
-            </td>
-        </tr>
-    </table>
+    <script src="script.js"></script>
 </body>
 </html>
